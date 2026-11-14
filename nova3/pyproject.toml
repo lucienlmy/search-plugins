@@ -53,6 +53,9 @@ line-length = 1000
 [tool.ruff.lint]
 ignore = ["FA100", "RUF012", "SIM102", "S110"]
 
+[tool.uv]
+exclude-newer = "3 days"
+
 # workaround for https://github.com/uqfoundation/dill/issues/753
 [[tool.uv.dependency-metadata]]
 name = "dill"
