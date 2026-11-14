@@ -39,7 +39,9 @@ jobs:
 
       - name: Setup environment
         run: |
-          pip install uv
+          pip install \
+            --uploaded-prior-to P3D \
+            uv
           uv sync
 
       - name: Run tests
